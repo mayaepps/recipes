@@ -9,10 +9,13 @@
     <h1>Here are your recipes!</h1>
     <section class="recipe">
       {% for result in results.results %}
-        <p><a href ="{{result.href }}" alt="{{ result.alt }}">{{ result.title }}</a></p>
-         <div><img src="{{ result.thumbnail }}"></div>
-        <p>Ingredients: {{ result.ingredients }}</p>
-        <br>
+      <section class="result">
+          <div class="image"><img src="{{ result.thumbnail }}"></div>
+          <div>
+            <div class="title">{{ result.title }}</div>
+            <div class="ingredients">{{ result.ingredients }}</div>
+          </div>
+        </section>
       {% endfor %}
     </section>
     <p><a href="/">Search again!</p>

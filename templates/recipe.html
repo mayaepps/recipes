@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+  </head>
+  <body>
+    <h1>Here are your recipes!</h1>
+    <section class="recipe">
+      {% for result in results.results %}
+        <p><a href ="{{result.href }}" alt="{{ result.alt }}">{{ result.title }}</a></p>
+         <div><img src="{{ result.thumbnail }}"></div>
+        <p>Ingredients: {{ result.ingredients }}</p>
+        <br>
+      {% endfor %}
+    </section>
+    <p><a href="/">Search again!</p>
+  </body>
+</html>

@@ -23,6 +23,7 @@ h1 {
   color: white;
   grid-row: 1;
   grid-column: 1/span 3;
+  height: 60px;
 
 }
 

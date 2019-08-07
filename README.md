@@ -1,2 +1,5 @@
-# recipes
-CSSI project / finds recipes using recipe puppy api
+# A Recipe Webapp
+
+This recipe webapp runs on Google App Engine and uses the recipe Puppy API to allow you  to search for recipes and display search results.
+
+This was created as a part of the CSSIx program at Loyola Marymount University.
